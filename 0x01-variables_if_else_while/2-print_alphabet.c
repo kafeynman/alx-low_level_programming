@@ -7,9 +7,13 @@
  */
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	char ch;
 
-	printf("%s\n", alphabet);
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
 
 	return (0);
 }

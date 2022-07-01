@@ -10,9 +10,9 @@
 int main(void)
 {
 	int n;
+	int last_digit = n % 10;
 
 	n = rand() - RAND_MAX / 2;
-	int last_digit = n % 10;
 
 	if (last_digit == 0)
 	{

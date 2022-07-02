@@ -12,6 +12,8 @@ int main(void)
 
 	for (i = 48; i < 57; i++)
 	{
+		int stat;
+
 		for (j = i; j < 58; j++)
 		{
 			if (j != i)
@@ -20,8 +22,9 @@ int main(void)
 				putchar(j);
 				if (i == 56 && j == 57)
 				{
-					break;
-				} else
+					stat = 1;
+				}
+				if (stat != 1)
 				{
 					putchar(',');
 					putchar(' ');

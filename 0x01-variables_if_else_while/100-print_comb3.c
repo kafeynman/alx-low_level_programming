@@ -7,21 +7,19 @@
  */
 int main(void)
 {
-	int n;
-	int x;
+	int i;
+	int j;
+	int k;
 
-	for (int i = 48; i <= 57; i++)
+	for (i = 48; i < 57; i++)
 	{
-		for (n = 0; n <= 9; n++)
+		for (j = i; j < 58; j++)
 		{
 			putchar(i);
-			x += 1;
-			putchar(x);
+			putchar(j);
 			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }

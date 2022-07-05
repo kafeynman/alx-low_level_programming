@@ -14,7 +14,7 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			m = j * 9;
-			char n[2] = str(m);
+			char n[2] = (str) m;
 
 			if (m > 9)
 			{

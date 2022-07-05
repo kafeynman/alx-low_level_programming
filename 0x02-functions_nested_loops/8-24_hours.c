@@ -10,13 +10,13 @@ void jack_bauer(void)
 {
 	int i, j, k, m;
 
-	for (i = 0; i < 3; i++)
+	for (i = 48; i < 51; i++)
 	{
-		for (j = 0; j < 4; j++)
+		for (j = 48; j < 52; j++)
 		{
-			for (k = 0; k < 6; k++)
+			for (k = 48; k < 54; k++)
 			{
-				for (m = 0; m < 10; m++)
+				for (m = 48; m < 58 m++)
 				{
 					_putchar(i);
 					_putchar(k);

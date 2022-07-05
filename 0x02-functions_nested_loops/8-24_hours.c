@@ -8,11 +8,20 @@
  */
 void jack_bauer(void)
 {
-	int i, j, k, m;
+	int i, j, k, m, n;
 
 	for (i = 48; i < 51; i++)
 	{
-		for (j = 48; j < 52; j++)
+		if (i == 50)
+		{
+			n = 53;
+		}
+		else
+		{
+			n = 58;
+		}
+
+		for (j = 48; j < n; j++)
 		{
 			for (k = 48; k < 54; k++)
 			{

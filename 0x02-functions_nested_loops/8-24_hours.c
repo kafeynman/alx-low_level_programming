@@ -14,7 +14,7 @@ void jack_bauer(void)
 	{
 		if (i == 50)
 		{
-			n = 53;
+			n = 52;
 		}
 		else
 		{

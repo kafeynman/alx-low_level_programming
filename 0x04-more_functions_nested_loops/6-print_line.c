@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - a function that draws a line in the terminal
+ * print_line - a function that draws a line
  * @n: An input integer
  * Return: 0 (always)
  */
@@ -15,5 +15,6 @@ void print_line(int n)
 		for (; i < n; i++)
 			_putchar('_');
 	}
+
 	_putchar('\n');
 }

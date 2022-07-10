@@ -3,6 +3,7 @@
 /**
  * print_diagonal - a function that draws a diagonal line
  * @n: An input integer
+ *
  * Return: 0 (always)
  */
  

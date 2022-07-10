@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - checks if the argument is a digit between 0 - 9
- * @n: int parameter
+ * @c: int parameter
  *
  * Return: 1 (digit), 0 (otherwise)
  */

@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - Entry piont
- * Return: 0 (always)
+ * Return: Always 0
  */
- 
 int main(void)
 {
 	int i = 1;
@@ -21,7 +20,6 @@ int main(void)
 		else
 			printf("%d ", i);
 	}
-
 	printf("Buzz\n");
 
 	return (0);

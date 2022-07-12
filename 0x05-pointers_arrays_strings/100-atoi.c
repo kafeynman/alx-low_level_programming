@@ -17,7 +17,7 @@ int _atoi(char *s)
 			res = res * 10 + s[i] - '0';
 		}
 		else if (s[i] == '-')
-		{
+		{	printf("negative\n");
 			res *= -1;
 		}
 		else if (_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)

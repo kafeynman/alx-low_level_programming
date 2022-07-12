@@ -2,15 +2,15 @@
 
 /**
 * _atoi - converts a string to an integer.
-* @S: string argument
+* @s: string argument
 * Return: int
 */
 
-int _atoi(char *S)
+int _atoi(char *s)
 {
 	int res = 0, i;
 
-	for (i = 0; S[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{

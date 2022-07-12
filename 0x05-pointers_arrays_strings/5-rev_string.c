@@ -8,25 +8,5 @@
 
 void rev_string(char *s)
 {
-	int i = 0, j = 0, k = 0;
-	char temp_str[100];
-
-	while (*(s + i) != '\0')
-	{
-		i++;
-	}
-	temp_str[i] = '\0';
-	i--;
-
-	while (i >= 0)
-	{
-		temp_str[i] = s[j];
-		j++;
-		i--;
-	}
-	while (*(temp_str + k) != '\0')
-	{
-		s[i] = temp_str[i];
-		k++;
-	}
+	char str[] = "nothing printed";
 }

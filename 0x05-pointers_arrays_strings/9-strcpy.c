@@ -2,42 +2,37 @@
 #include <stdlib.h>
 
 /**
-* rev_string - reverses a string.
-* @s: string arg.
-* Return: nothing.
+* _strcpy - copy the string src into dest
+* @dest: pointer to string.
+* @src: pointer to string
+* Return: dest
 */
 
-void rev_string(char *s)
+char *_strcpy(char *dest, char *src)
 {
 	int len = 0, i = 0;
 	char *s_cp;
 
-	while (s[i] != '\0')
+	while (src[i] != '\0')
 	{
 		len++;
 	}
-	s_cp = (char *)malloc(len * sizeof(char));
+	dest = (char *)malloc(len * sizeof(char));
 	i = 0;
 	--len;
 
-	if (s_cp == NULL)
+	if (dest == NULL)
 	{
 		exit(0);
 	}
 	else
 	{
-		while (s[i] != '\0')
+		while (src[i] != '\0')
 		{
-			s_cp[i] = s[len];
+			dest[i] = src[len];
 			i++;
 			len--;
 		}
-		i = 0;
 	}
-	while (s_cp[i] != '\0')
-	{
-		s[i] = s_cp[i];
-		i++;
-	}
-	free(s_cp);
+	return (dest);
 }

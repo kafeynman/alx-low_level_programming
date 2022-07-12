@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	unsigned int res = 0, i;
-	int sign = 1, nodigi = 1;
+	int sign = 1, nodigit = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -25,7 +25,7 @@ int _atoi(char *s)
 		}
 		else if (i != 0)
 		{
-			if(_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)
+			if (_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)
 			{
 				break;
 			}
@@ -34,7 +34,7 @@ int _atoi(char *s)
 
 	if (sign < 0)
 		return (res *= -1);
-	else if (nodigi == 1)
+	else if (nodigit == 1)
 		return (0);
 	else
 		return (res);

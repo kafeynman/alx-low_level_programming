@@ -29,9 +29,9 @@ void rev_string(char *s)
 		s[i] = temp_str[i];
 		k++;
 	}
-	while (*(s + m) != '\0')
+	while (*(temp_str + m) != '\0')
 	{
-		_putchar(s[m]);
+		_putchar(temp_str[m]);
 		m++;
 	}
 }

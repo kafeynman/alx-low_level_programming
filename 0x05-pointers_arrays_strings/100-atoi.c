@@ -18,20 +18,19 @@ int _atoi(char *s)
 		{
 			res = res * 10 + s[i] - '0';
 		}
-		/*else if (s[i] == '-')*/
-		/*{*/
-		/*	res *= -1;*/
-		/*	sign *= -1;*/
-		/*}*/
+		else if (s[i] == '-')
+		{
+			sign *= -1;
+		}
 		else if (_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)
 		{
 			break;
 		}
 	}
 	if (sign < 0)
-		printf("-ve");
-
-	return (res);
+		return (res *= -1);
+	else
+		return (res);
 }
 
 /**

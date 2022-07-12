@@ -10,25 +10,32 @@
 int _atoi(char *s)
 {
 	unsigned int res = 0, i;
-	int sign = 1;
+	int sign = 1, nodigi = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (_isdigit(s[i]) == 1)
 		{
+			nodigit = 0;
 			res = res * 10 + s[i] - '0';
 		}
 		else if (s[i] == '-')
 		{
 			sign *= -1;
 		}
-		else if (_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)
+		else if (i != 0)
 		{
-			break;
+			if(_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)
+			{
+				break;
+			}
 		}
 	}
+
 	if (sign < 0)
 		return (res *= -1);
+	else if (nodigi == 1)
+		return (0);
 	else
 		return (res);
 }

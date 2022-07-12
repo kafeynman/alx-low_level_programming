@@ -16,28 +16,5 @@ void rev_string(char *s)
 	{
 		len++;
 	}
-	s_cp = (char *)malloc(len * sizeof(char));
-	i = 0;
-	--len;
-
-	if (s_cp == NULL)
-	{
-		exit(0);
-	}
-	else
-	{
-		while (s[i] != '\0')
-		{
-			s_cp[i] = s[len];
-			i++;
-			len--;
-		}
-		i = 0;
-	}
-	while (s_cp[i] != '\0')
-	{
-		s[i] = s_cp[i];
-		i++;
-	}
-	free(s_cp);
+	_putchar((len % 10) + '0');
 }

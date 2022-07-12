@@ -10,9 +10,9 @@
 int main(void)
 {
 	int ran_num = 0, cnt;
-	time_t t = 0;
+	time_t t;
 
-	srand(time(t));
+	srand(time(&t));
 	for (cnt = 0; cnt < 100; cnt++)
 	{
 		ran_num = rand();

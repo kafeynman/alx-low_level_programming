@@ -5,6 +5,7 @@
 * main - Entry point
 * Return: 0 (always)
 */
+
 int main(void)
 {
 	int i;
@@ -20,8 +21,8 @@ int main(void)
 		else
 			printf("%d ", i);
 	}
-
 	printf("Buzz\n");
 
 	return (0);
 }
+

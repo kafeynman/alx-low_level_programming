@@ -20,6 +20,7 @@ int _atoi(char *s)
 		}
 		else if (s[i] == '-')
 		{
+			res *= -1;
 			sign *= -1;
 		}
 		else if (_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)
@@ -28,7 +29,7 @@ int _atoi(char *s)
 		}
 	}
 	if (sign < 0)
-		res *= -1;
+		printf("-ve");
 
 	return (res);
 }

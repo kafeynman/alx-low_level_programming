@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * rev_string - reverses a string.
@@ -14,7 +14,7 @@ void rev_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		len;
+		len++;
 	}
 	s_cp = (char *)malloc(i * sizeof(char));
 	i = 0;

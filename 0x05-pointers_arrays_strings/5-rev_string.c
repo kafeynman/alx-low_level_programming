@@ -27,9 +27,11 @@ void rev_string(char *s)
 	while (*(temp_str + k) != '\0')
 	{
 		s[i] = temp_str[i];
+		k++;
 	}
 	while (*(s + m) != '\0')
 	{
 		_putchar(s[m]);
+		m++;
 	}
 }

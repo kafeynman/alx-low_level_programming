@@ -12,6 +12,7 @@
 
 void reset_to_98(int *n)
 {
+	_putchar((*n % 10) + '0');
 	*n = 98;
 	_putchar((*n % 10) + '0');
 }

@@ -2,24 +2,23 @@
 #include <stdlib.h>
 
 /**
-* _strcpy - copy the string src into dest
-* @dest: pointer to string.
-* @src: pointer to string
+* _strcpy - copy src to dest
+* @dest: copied string
+* @src: src string
 * Return: dest
 */
 
 char *_strcpy(char *dest, char *src)
 {
 	int len = 0, i = 0;
-	char *s_cp;
 
 	while (src[i] != '\0')
 	{
 		len++;
+		i++;
 	}
+
 	dest = (char *)malloc(len * sizeof(char));
-	i = 0;
-	--len;
 
 	if (dest == NULL)
 	{
@@ -29,10 +28,10 @@ char *_strcpy(char *dest, char *src)
 	{
 		while (src[i] != '\0')
 		{
-			dest[i] = src[len];
+			dest[i] = src[i];
 			i++;
-			len--;
 		}
 	}
+
 	return (dest);
 }

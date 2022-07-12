@@ -9,7 +9,7 @@
 
 void print_rev(char *str)
 {
-	int len = sizeof(str);
+	int len = 0;
 	/* char *s[sizeof(len)];*/
 	int i = 0;
 
@@ -17,6 +17,7 @@ void print_rev(char *str)
 	{
 		_putchar(*(str + i));
 		i++;
+		len++;
 	}
 	printf("%d\n", len);
 }

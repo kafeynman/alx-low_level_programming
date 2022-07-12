@@ -30,3 +30,4 @@ char *_strcpy(char *dest, char *src);
 void print_array(int *a, int n);
 void puts_half(char *str);
 void puts2(char *str);
+int _atoi(char *S);

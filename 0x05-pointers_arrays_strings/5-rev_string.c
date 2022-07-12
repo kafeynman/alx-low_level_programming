@@ -16,7 +16,7 @@ void rev_string(char *s)
 	{
 		len++;
 	}
-	s_cp = (char *)malloc(i * sizeof(char));
+	s_cp = (char *)malloc(len * sizeof(char));
 	i = 0;
 	--len;
 

@@ -9,7 +9,8 @@
 
 int _atoi(char *s)
 {
-	int res = 0, i;
+	unsigned int res = 0, i;
+	int sign = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -18,14 +19,16 @@ int _atoi(char *s)
 			res = res * 10 + s[i] - '0';
 		}
 		else if (s[i] == '-')
-		{	printf("negative\n");
-			res *= -1;
+		{
+			sign *= -1;
 		}
 		else if (_isdigit(s[i]) == 0 && _isdigit(s[i - 1]) == 1)
 		{
 			break;
 		}
 	}
+	if (sign < 0)
+		res *= -1;
 
 	return (res);
 }

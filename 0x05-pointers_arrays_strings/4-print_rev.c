@@ -18,5 +18,5 @@ void print_rev(char *str)
 		_putchar(*(str + i));
 		i++;
 	}
-	_puts(len);
+	printf("%d\n", len);
 }

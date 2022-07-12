@@ -17,10 +17,11 @@ void rev_string(char *s)
 		len++;
 		i++;
 	}
-	/* allocate mem to s_cp of lenght len */
+
 	s_cp = (char *)malloc(len * sizeof(char));
 	i = 0;
 	--len;
+
 	if (s_cp == NULL)
 	{
 		exit(0);
@@ -35,9 +36,12 @@ void rev_string(char *s)
 		}
 		i = 0;
 	}
+
 	while (s[i] != '\0')
 	{
 		s[i] = s_cp[i];
 		i++;
 	}
+
+	free(s_cp);
 }
